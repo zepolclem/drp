@@ -1,6 +1,6 @@
 <div class="table-responsive">
-    <table class="table table-striped">
-        <thead>
+    <table class="table table-striped table-sm table-hover">
+        <thead class="thead-dark">
             <tr>
             <th scope="col">Constructeur</th>
             <th scope="col">Modèle</th>

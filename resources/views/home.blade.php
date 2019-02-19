@@ -3,36 +3,27 @@
 @section('contenu')
 
 
-
-        <h1 class="font-weight-italic">DRP</h1>
-        <h3 class="font-weight-bold">Project.GTR</h3>
-
-
-
-        <section>
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-xs-12 col-md-3">
-                        <h2 class="font-weight-light text-center text-lg-left mt-4 mb-0">Modèles</h2>
-                        <hr class="mt-2 mb-5">
-                        <div class="container-fluid">
-                            @include('layout.tables.modeles')
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <h2 class="font-weight-light text-center text-lg-left mt-4 mb-0">Motorisations</h2>
-                        <hr class="mt-2 mb-5">
-                        <div class="container-fluid">
-                            @include('layout.tables.motorisations')
-                        </div>
-                    </div>
-                </div>
+<section class="bg-light py-5">
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-md-5">
+                <h2 class="font-weight-light text-center text-lg-left mt-4">Modèles</h2>
+                @include('layout.tables.modeles')
             </div>
-        <section>
-                <h2 class="font-weight-light text-center text-lg-left mt-4 mb-0">Constructeurs</h2>
-                <hr class="mt-2 mb-5">
-                <div class="container">
-                    @include('layout.tables.constructeurs')
-                </div>
-            </section>
+            <div class="col-md-7">
+                <h2 class="font-weight-light text-center text-lg-left mt-4">Motorisations</h2>
+                @include('layout.tables.motorisations')
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-dark py-5">
+    <div class="container-fluid">
+        <h2 class="font-weight-bold text-light text-center text-lg-left mb-4">Constructeurs</h2>
+        <div class="container-fluid">
+            @include('layout.tables.constructeurs')
+        </div>
+    </div>
+</section>
+
 @endsection
