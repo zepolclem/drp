@@ -10,6 +10,7 @@ class homeController extends Controller
     {
         $modeles=\App\Modele::all();
         $motorisations=\App\Motorisation::all();
-        return view('home',compact('motorisations', 'modeles'));
+        $constructeurs=\App\Constructeur::all();
+        return view('home',compact('motorisations', 'modeles', 'constructeurs'));
     }
 }
